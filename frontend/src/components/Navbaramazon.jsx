@@ -45,7 +45,7 @@ const Navbaramazon = () => {
             <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
           </NavDropdown> */}
            <Nav className="ml-auto">
-            <Nav.Link href="#features"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;Signin</Nav.Link>
+            <Nav.Link href="#features"><i className="fa-solid fa-right-to-bracket"></i>&nbsp;Signin</Nav.Link>
             <Nav.Link href="#home"><i className="fa-solid fa-cart-shopping"></i>&nbsp;Cart</Nav.Link>
           </Nav>
             {/* <Nav.Link href="#" disabled>
