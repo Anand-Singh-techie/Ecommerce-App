@@ -20,7 +20,7 @@ app.get('/products/:id', (req,res)=>{
     res.send(product);
 });
 
-const PORT = 8080;
+const PORT = 8000;
 app.listen(process.env.PORT || PORT, ()=> {
     console.log(`Server Running in ${process.env.NODE_ENV} Mode on Port ${process.env.PORT}`);
 });
