@@ -1,5 +1,9 @@
 const express = require('express');
 const products = require('./data/products')
+const dotenv = require("dotenv")
+
+// dotenv config
+dotenv.config();
 
 const app = express();
 
@@ -16,6 +20,7 @@ app.get('/products/:id', (req,res)=>{
     res.send(product);
 });
 
-app.listen(8080, ()=> {
-    console.log('Server Running on Port 8080');
+const PORT = 8080;
+app.listen(process.env.PORT || PORT, ()=> {
+    console.log(`Server Running in ${process.env.NODE_ENV} Mode on Port ${process.env.PORT}`);
 });
